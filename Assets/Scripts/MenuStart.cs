@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuStart : MonoBehaviour
 {
-    public string Level1 = "LevelOne";
+    public string Tutorial = "tutorial";
     // Use this for initialization
     void Start()
     {
@@ -15,10 +15,10 @@ public class MenuStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //om return är nedtryckt så loadas LevelOne
+        //om return är nedtryckt så loadas Tutorial
         if(Input.GetKeyDown(KeyCode.Return))
         {
-            SceneManager.LoadScene(Level1);
+            SceneManager.LoadScene(Tutorial);
         }
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Hurtobject : MonoBehaviour
 {
     //en int som säger hur mycket man skadas
-    public int damage;
+    private int damage = 1;
     //om objektet rör nåt
     public void OnCollisionEnter2D(Collision2D collision)
     {

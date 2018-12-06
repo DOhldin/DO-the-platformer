@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/VictoryLevel.unity
     guid: 5e4ce39b1b5864b4d9924ad5233f62b9
+  - enabled: 1
+    path: Assets/Levels/Tutorial.unity
+    guid: 9723e7e0ab45c604e996bc02fcabe41f
   m_configObjects: {}

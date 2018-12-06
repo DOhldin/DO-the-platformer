@@ -7,6 +7,7 @@ public class NextLevel : MonoBehaviour
 {
     public static int ActiveLevel;
     public int Reset;
+    public string leveltoload0 = "LevelOne";
     public string leveltoload = "LevelTwo";
     public string leveltoload2 = "VictoryLevel";
     // om något aktiverar collision 2d triggern
@@ -15,14 +16,20 @@ public class NextLevel : MonoBehaviour
         //om objektet har collision med player
         if(collision.tag=="Player")
         {
-            //ifall om Activelevel är 0 så loadar LevelTwo
+            //ifall om Activelevel är 0 så loadas LevelOne
             if (ActiveLevel == 0)
+            {
+                print("GJ");
+                SceneManager.LoadScene(leveltoload0);
+            }
+            //ifall om Activelevel är 1 så loadas LevelTwo
+            if (ActiveLevel == 1)
             {
                 print("GJ");
                 SceneManager.LoadScene(leveltoload);
             }
-            //ifall om Activelevel är 1 så loadar VictoryLevel
-            if (ActiveLevel == 1)
+            //ifall om Activelevel är 2 så loadas VictoryLevel
+            if (ActiveLevel == 2)
             {
                 print("you win");
                 SceneManager.LoadScene(leveltoload2);
